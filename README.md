@@ -1,7 +1,7 @@
 
-# 🤖 SophiaBot API (PL/I Analyzer)
+# 🤖 Sophia Local Agent (PL/I Analyzer)
 
-SophiaBot est une API locale basée sur Flask, conçue pour fonctionner avec l'extension [Continue](https://continue.dev) dans VS Code.  
+Sophia Local Agent est une API locale basée sur Flask, conçue pour fonctionner avec l'extension [Continue](https://continue.dev) dans VS Code.  
 Elle agit comme un "faux serveur Ollama" pour connecter votre propre logique d'analyse de code PL/I à une interface IA intégrée à votre éditeur.
 
 ---
@@ -19,7 +19,7 @@ Elle agit comme un "faux serveur Ollama" pour connecter votre propre logique d'a
 ## 🧱 Structure du projet
 
 ```
-sophiabot-api/
+sophia-local-agent/
 ├── app.py                # L'API Flask principale
 ├── config.py             # Configuration (API Sophia, modèle, etc.)
 ├── file_loader.py        # Extraction de texte depuis différents formats de fichier
@@ -47,8 +47,8 @@ sophiabot-api/
 
 ### 1. Clone ou extrait le projet
 ```bash
-git clone monprojet/sophiabot-api.git
-cd sophiabot-api
+git clone monprojet/sophia-local-agent.git
+cd sophia-local-agent
 ```
 
 ### 2. Crée un environnement virtuel (recommandé)
@@ -89,7 +89,7 @@ python app.py
 {
   "models": [
     {
-      "title": "SophiaBot (PL1)",
+      "title": "Sophia Local Agent (PL1)",
       "provider": "ollama",
       "model": "llama3.3:latest",
       "apiBase": "http://localhost:8000",
@@ -105,7 +105,7 @@ python app.py
     {
       "name": "auditPL1",
       "description": "Analyse le code PL/I sélectionné",
-      "model": "SophiaBot (PL1)",
+      "model": "Sophia Local Agent (PL1)",
       "prompt": "{{selection}}"
     }
   ]
