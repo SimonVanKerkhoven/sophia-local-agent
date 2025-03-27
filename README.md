@@ -170,6 +170,24 @@ venv/
 
 ---
 
+
+---
+
+## 💬 Utilisation en ligne de commande (CLI)
+
+Tu peux aussi interagir avec Sophia Local Agent directement dans ton terminal, sans passer par VS Code.
+
+### ▶️ Commande à lancer
+
+```bash
+python main.py
+```
+
+> L'agent se lance et attend tes questions dans le terminal. Tape `exit` pour quitter la session.
+
+Ce mode est pratique pour des tests rapides, ou pour intégrer Sophia dans d'autres scripts.
+
+
 ## 📬 Besoin d’aide ?
 - Teste ton API localement avec Postman / curl
 - Vérifie que Continue appelle bien `/api/generate` ou `/api/chat`
