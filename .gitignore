@@ -1,8 +1,27 @@
-
-sophia_memory.db
+# 🔐 Secrets
 .env
+
+# 🧠 Base de mémoire de l’agent
+sophia_memory.db
+
+# 🐍 Python
 __pycache__/
 *.pyc
 *.pyo
-venv/
+*.pyd
+
+# 🧪 Tests temporaires
 *.log
+*.tmp
+
+# 🧪 Jupyter
+.ipynb_checkpoints/
+
+# 🗃️ Environnement virtuel
+venv/
+env/
+.venv/
+ENV/
+
+# 🔎 VS Code
+.vscode/
