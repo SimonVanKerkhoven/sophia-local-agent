@@ -21,7 +21,7 @@ def build_prompt():
         "Voici l'historique de la conversation :"
     ]
 
-    for role, message in history[-10:]:
+    for role, message in history[-100:]:
         prefix = "Utilisateur:" if role == "user" else "SophiaBot:"
         prompt_parts.append(f"{prefix} {message}")
 
