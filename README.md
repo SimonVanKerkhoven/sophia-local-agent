@@ -139,6 +139,9 @@ Expose les routes :
 
 ### 4. `memory_manager.py`  
 - Gère l'historique : insère, lit, et suit les échanges
+- Utilise une base de données SQLite locale (`sophia_memory.db`) créée automatiquement
+- Lors de chaque échange, la question de l'utilisateur et la réponse de Sophia sont sauvegardées
+- Lors de la génération de réponse, l'agent reprend les **100 dernières interactions** pour reconstruire le contexte
 
 ---
 
