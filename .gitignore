@@ -1,0 +1,8 @@
+
+sophia_memory.db
+.env
+__pycache__/
+*.pyc
+*.pyo
+venv/
+*.log
